@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>js Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <div class="wrapper">
+            <div class="backPic">
+                <div class="backPic_left">
+                    <img src="img/bg_0 (1).png" alt="">
+                    <div class="btnSec">
+                        <button class="preBtn preBtn_hide" onclick="preQuiz()"><i class="arrow fa fa-arrow-circle-left" aria-hidden="true"></i> Previous Question</button>
+                        <button class="nextBtn" onclick="startQuiz()">Start<i class="arrow fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="backPic_right">
+                    <img src="img/bg.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="head">
+                            <div class="heading">
+                                <h1>Start Playing</h1>
+                            </div>
+                            <div class="mark">
+                                <img src="img/clock.png" alt="">
+                                <p id="finalMark">0</p>
+                            </div>
+                        </div>
+                        <div class="quizCard">
+                            <div class="quizHead">
+                                <div class="quizNo">
+                                    <label for="" class="quizNum">Question No:00</label>
+                                </div>
+                            </div>
+                            <div class="questionSec">
+                                <div class="question">
+                                    <h1 class="ques">Start The Quiz......!</h1>
+                                </div>
+                            </div>
+                            <div class="optionSec">
+                                <div class="option">
+                                    <input type="button" class="optionOne optionOne_hide" value="option 01" onclick="quizAns(value)"/>
+                                </div>
+                                <div class="option">
+                                    <input type="button" class="optionTwo optionTwo_hide" value="option 02" onclick="quizAns(value)"/>
+                                </div>
+                                <div class="option">
+                                    <input type="button" class="optionTre optionTre_hide" value="option 03" onclick="quizAns(value)"/>
+                                </div>
+                                <div class="option">
+                                    <input type="button" class="optionFour optionFour_hide" value="option 04" onclick="quizAns(value)"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://kit.fontawesome.com/825d68f42c.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
