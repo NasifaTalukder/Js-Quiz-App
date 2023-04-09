@@ -168,3 +168,7 @@ input.optionTwo_hide{
  input.optionFour_hide{
     display: none;
  }
+ input.optionOneColor{
+    background-color: rgb(8, 107, 8);
+    color: #fff;
+ }

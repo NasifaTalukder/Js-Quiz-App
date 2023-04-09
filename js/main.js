@@ -94,11 +94,39 @@ let preQuiz=()=>{
 let result=0;
 
     let quizAns=(ans)=>{
+       
+        option1.value=quizData[quesNo].OptionOne;
+        option2.value=quizData[quesNo].optionTwo;
+        option3.value=quizData[quesNo].OptionTre;
+        option4.value=quizData[quesNo].optionFour;
+
     let correctAns=quizData[quesNo].rightAns;
     if(ans==correctAns){
-        result=result+5;
+        result=result+5; 
     }
     finalPoint.innerHTML=result;
+
+    if(ans==option1.value){
+       option2.disabled = true;
+       option3.disabled = true;
+       option4.disabled = true;
+    }
+    else if(ans==option2.value){
+       option1.disabled = true;
+       option3.disabled = true;
+       option4.disabled = true;
+    }
+    else if(ans==option3.value){
+        option1.disabled = true;
+        option2.disabled = true;
+        option4.disabled = true;
+    }else{
+        option1.disabled = true;
+        option2.disabled = true;
+        option3.disabled = true;
+    }
+
+   
 }
 
 
